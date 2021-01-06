@@ -1,13 +1,19 @@
 // так пишется переменная
-$color: red;
-$main-with: 100px;
+// $color: red;
+// $main-with: 100px;
 
-body {
-  background-color: $color;
-  width: $main-with;
-}
+// body {
+//   background-color: $color;
+//   width: $main-with;
+// }
 
 // & - родительськое имя класа
 
 // @import './vars' -- с главного файла sass ссылаемся на паршал - одну из сосставных частей нашего css,
 //  имя паршала начинаеться со знака _
+
+@import './utils/variables';
+@import './utils/placeholders';
+@import './base/normalize';
+@import './components/logo';
+@import './components/page-header';

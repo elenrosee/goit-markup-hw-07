@@ -7,17 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">    
+    <link rel="stylesheet" href="./css/main.min.css">
+    <!-- <link rel="stylesheet" href="./for-change/style.css">    -->
 </head>
 <body>
-    <header class="page-header">
-            <nav class="header-nav container">
+    <header>
+            <div class="header">
             <a href="./index.html" class="logo"><span>Web</span><span class="studio-logo">Studio</span></a>
+            <nav>
             <ul class="site-nav">
-                <li class="item"><a class="current nav-link" href="./index.html">Студия</a></li>
-                <li class="item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                <li class="item"><a class="nav-link" href="#">Контакты</a></li>
+                <li class="site-nav-link current-link"><a href="./index.html">Студия</a></li>
+                <li class="site-nav-link"><a href="./portfolio.html">Портфолио</a></li>
+                <li class="site-nav-link"><a href="#">Контакты</a></li>
             </ul>
+            </nav>
             <ul class="auth-nav">
                 <li class="item">
                     <a class="contact-link" href="mailto:info@devstudio.com">
@@ -32,7 +35,7 @@
                     </svg>+38 096 111 11 11</a>
                 </li>
              </ul>
-        </nav>
+        </div>
     </header>
     <main>
         <section class="hero">
@@ -250,7 +253,7 @@
     </main>
     <footer class="footer">
         <div class="footer-nav container">
-            <div class="footer-address">
+            <div>
              <a href="./index.html" class="logo"><span>Web</span><span class="studio-logo">Studio</span></a>
              <address>
                  <ul class="footer-auth-nav">
@@ -271,7 +274,7 @@
             </div>
                 <form class="footer-form">
                   <h3 class="white-title">Подпишитесь на рассылку</h3>
-                  <label class="footer-label">
+                  <label>
                     <input class="footer-input" type="email" name="email" placeholder="E-mail">
                   </label>
                   <button class="footer-btn btn" type="submit">
