@@ -1,4 +1,4 @@
-html {
+/* html {
   box-sizing: border-box;
 }
 *,
@@ -18,7 +18,7 @@ a {
 * {
   margin: 0;
   padding: 0;
-}
+} */
 /*убрали дефолтные стили*/
 
 :root {
@@ -80,7 +80,7 @@ body {
 
 /*шапка сайта*/
 
-.container {
+/* .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -133,11 +133,11 @@ body {
   border-radius: 2px;
   background-color: var(--accent-color);
   opacity: 1;
-}
+} */
 
 /* перенесла в сасс */
 
-.contact-link {
+/* .contact-link {
   display: flex;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -164,10 +164,10 @@ body {
 .contact-link:focus,
 .icon-mail:hover {
   color: var(--accent-color);
-}
+} */
 
 /* секция герой  */
-.hero {
+/* .hero {
   text-align: center;
   padding: 200px 0;
   margin-left: auto;
@@ -193,11 +193,11 @@ body {
   text-transform: uppercase;
   color: var(--text-color-white);
   margin-bottom: 30px;
-}
+} */
 
 /* секция особенности и чем мы занимаемся */
 
-.title {
+/* .title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -208,8 +208,8 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.about-us,
+} */
+/* .about-us,
 .team,
 .clients {
   padding: 94px 0;
@@ -256,7 +256,7 @@ body {
 .about-us-text {
   line-height: 1.71;
   color: var(--text-color-grey);
-}
+} */
 
 .what-we-do-title,
 .team-title,

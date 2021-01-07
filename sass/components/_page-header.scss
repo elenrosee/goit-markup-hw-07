@@ -1,13 +1,18 @@
 .header {
-  @extend %container;
   align-items: center;
   display: flex;
   height: 80px;
 }
+
 .site-nav {
   display: flex;
   margin-left: 93px;
+
+  li:not(:last-child) {
+    margin-right: 50px;
+  }
 }
+
 .site-nav-link {
   position: relative;
   font-weight: 500;
@@ -16,15 +21,12 @@
 
   transition: color 250ms $timing-function;
 
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-
   &:hover,
   &:focus {
     color: $accent-color;
   }
 }
+
 .current-link {
   color: $accent-color;
 
@@ -40,4 +42,32 @@
     background-color: $accent-color;
     opacity: 1;
   }
+}
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+
+  li:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+
+.auth-nav-link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $text-color-grey;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.nav-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
