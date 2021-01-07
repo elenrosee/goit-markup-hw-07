@@ -1,0 +1,35 @@
+.clients {
+  padding: 94px 0;
+}
+.clients-title {
+  @extend %section-title;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+
+  & li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.clients-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $icon-color;
+  color: $icon-color;
+  border-radius: 4px;
+  background-position: center;
+
+  transition: color 250ms $timing-function, border-color 250ms $timing-function;
+
+  &:hover {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+.clients-logo {
+  fill: currentColor;
+}
