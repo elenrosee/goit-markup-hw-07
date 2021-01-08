@@ -13,17 +13,16 @@
   }
 }
 .clients-link {
-  display: flex;
+  @include flex-center();
   width: 170px;
   height: 90px;
-  justify-content: center;
-  align-items: center;
   border: 1px solid $icon-color;
   color: $icon-color;
   border-radius: 4px;
   background-position: center;
 
-  transition: color 250ms $timing-function, border-color 250ms $timing-function;
+  @include transition(color);
+  @include transition(border-color);
 
   &:hover {
     color: $accent-color;

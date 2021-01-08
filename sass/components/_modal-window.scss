@@ -6,7 +6,8 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 
-  transition: transform 250ms $timing-function, opacity 250ms $timing-function;
+  @include transition(opacity);
+  @include transition(transform);
 }
 .modal {
   padding: 40px;
@@ -22,10 +23,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal-close-button {
-  display: flex;
+  @include flex-center();
   position: absolute;
-  align-items: center;
-  justify-content: center;
   top: 8px;
   right: 8px;
   overflow: hidden;
@@ -37,13 +36,13 @@
   background-color: inherit;
 }
 .modal-icon-close {
-  fill: $text-color-black-logo;
+  fill: $text-color-black;
 
-  transition: fill 250ms $timing-function;
+  @include transition(fill);
 
   &:hover,
   &:focus {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
 .modal-form-title {
@@ -86,7 +85,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: border-color 250ms $timing-function;
+  @include transition(border-color);
 
   &:focus {
     border-color: #2196f3;
@@ -101,15 +100,13 @@
   top: 50%;
   fill: currentColor;
 
-  transition: color 250ms $timing-function;
+  @include transition(color);
 }
 .icon-man {
   padding: 3px;
 }
 .modal-checkbox-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center();
 }
 .modal-checkbox {
   position: absolute;
@@ -141,8 +138,8 @@
     border-radius: 2px;
     border: 2px solid $text-color-black;
 
-    transition: border-color 250ms $timing-function,
-      background-color 250ms $timing-function;
+    @include transition(background-color);
+    @include transition(border-color);
   }
 }
 
