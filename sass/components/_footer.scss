@@ -36,42 +36,29 @@
 }
 .footer-social-links-list {
   display: flex;
+  margin: 0 -5px 0;
 }
-.footer-social-links-item {
-  width: 44px;
-  height: 44px;
-  background: rgba(255, 255, 255, 0.1);
-  background-size: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 50%;
 
-  &:nth-child(1) {
-    background-image: url(../images/icons/instagram.svg);
+@each $iconName in $footer-icons {
+  .footer-social-links-#{$iconName} {
+    background-image: url(../images/icons/#{$iconName}.svg);
     transition: background-color 250ms $timing-function;
-  }
-  &:nth-child(2) {
-    background-image: url(../images/icons/twitter.svg);
-    transition: background-color 250ms $timing-function;
-  }
-  &:nth-child(3) {
-    background-image: url(../images/icons/facebook.svg);
-    transition: background-color 250ms $timing-function;
-  }
-  &:nth-child(4) {
-    background-image: url(../images/icons/linkedin.svg);
-    transition: background-color 250ms $timing-function;
-  }
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 0 5px 0;
 
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  &:hover {
-    cursor: pointer;
-    background-color: $accent-color;
+    &:hover {
+      cursor: pointer;
+      background-color: $accent-color;
+    }
   }
 }
+
 .footer-form {
   margin-left: 93px;
 }

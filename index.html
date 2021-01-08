@@ -46,19 +46,19 @@
             <div class="container">
                 <h2 class="is-hidden">Особенности нашей компании</h2>
             <ul class="about-us-list">
-                <li class="about-us-item">
+                <li class="about-us-item-antenna">
                     <h3 class="about-us-title">Внимание к деталям</h3>
                     <p class="about-us-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li class="about-us-item">
+                <li class="about-us-item-clock">
                     <h3 class="about-us-title">Пунктуальность</h3>
                     <p class="about-us-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li class="about-us-item">
+                <li class="about-us-item-diagram">
                     <h3 class="about-us-title">Планирование</h3>
                     <p class="about-us-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li class="about-us-item">
+                <li class="about-us-item-astronaut">
                     <h3 class="about-us-title">Современные технологии</h3>
                     <p class="about-us-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
@@ -264,10 +264,10 @@
             <div class="footer-social-links">
                 <h3 class="footer-social-links-title">присоединяйтесь</h3>
                 <ul class="footer-social-links-list">
-                    <li class="footer-social-links-item"><a href=""></a></li>
-                    <li class="footer-social-links-item"><a href=""></a></li>
-                    <li class="footer-social-links-item"><a href=""></a></li>
-                    <li class="footer-social-links-item"><a href=""></a></li>
+                    <li class="footer-social-links-instagram"><a href=""></a></li>
+                    <li class="footer-social-links-twitter"><a href=""></a></li>
+                    <li class="footer-social-links-facebook"><a href=""></a></li>
+                    <li class="footer-social-links-linkedin"><a href=""></a></li>
                 </ul>
             </div>
                 <form class="footer-form">
@@ -285,48 +285,48 @@
         </div>
     </footer>
     <!-- modal window -->
-     <div  data-modal class="is-hidden backdrop">
+     <div  data-modal class="is-hidden modal-backdrop">
         <div class="modal">
-            <button data-modal-close class="close-button">
-              <svg class="icon-close" width="14px" height="14px">
+            <button data-modal-close class="modal-close-button">
+              <svg class="modal-icon-close" width="14px" height="14px">
                 <use href="./images/icons/symbol-defs.svg#icon-close"></use>
               </svg>  
             </button>
 
             <!-- разметка формы -->
 
-              <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
-              <form class="form js-speaker-form">
-                <label class="form-field">
-                    <p>Имя</p>
-                    <input class="form-input" type="text" name="name"/>
-                    <svg class="input-icon icon-man" width="18px" height="18px">
+              <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+              <form class="js-speaker-form">
+                <label class="modal-form-field">
+                    <p class="modal-form-field-caption">Имя</p>
+                    <input class="modal-form-input" type="text" name="name"/>
+                    <svg class="modal-input-icon icon-man" width="18px" height="18px">
                         <use href="./images/icons/symbol-defs.svg#icon-man"></use>
                     </svg>
                 </label>
-                <label class="form-field">
-                    <p>Телефон</p>
-                    <input class="form-input" type="tel" name="tel"/> 
-                    <svg class="input-icon" width="18px" height="18px">
+                <label class="modal-form-field">
+                    <p class="modal-form-field-caption">Телефон</p>
+                    <input class="modal-form-input" type="tel" name="tel"/> 
+                    <svg class="modal-input-icon" width="18px" height="18px">
                         <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
                     </svg>
                 </label>
-                <label class="form-field">
-                    <p>Почта</p>
-                    <input class="form-input" type="email" name="mail"/>
-                    <svg class="input-icon" width="18px" height="18px">
+                <label class="modal-form-field">
+                    <p class="modal-form-field-caption">Почта</p>
+                    <input class="modal-form-input" type="email" name="mail"/>
+                    <svg class="modal-input-icon" width="18px" height="18px">
                         <use href="./images/icons/symbol-defs.svg#icon-email"></use>
                     </svg>
                 </label>
-                <label class="form-field">
-                    <p>Комментарий</p>
-                    <textarea  class="form-input" name="comment" placeholder="Введите текст"></textarea>
+                <label class="modal-form-field">
+                    <p class="modal-form-field-caption">Комментарий</p>
+                    <textarea  class="modal-form-input" name="comment" placeholder="Введите текст"></textarea>
                 </label>                
-                <label class="checkbox-label">
-                    <input class="checkbox" type="checkbox" name="agreement">
-                    <span class="checkbox-content">Соглашаюсь с рассылкой и принимаю <a class="agreement-terms" href=""> Условия договора </a></span>
+                <label class="modal-checkbox-label">
+                    <input class="modal-checkbox" type="checkbox" name="agreement">
+                    <span class="modal-checkbox-content">Соглашаюсь с рассылкой и принимаю <a class="modal-agreement-terms" href="">Условия договора</a></span>
                 </label>
-                <button class="btn" type="submit">Отправить</button>
+                <button class="modal-submit-button" type="submit">Отправить</button>
               </form>   
         </div>
     </div>      
