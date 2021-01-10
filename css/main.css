@@ -283,6 +283,14 @@ a {
   padding: 0;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .hero-button, .footer-input-button, .modal-submit-button {
   display: inline-block;
   font-weight: 700;
@@ -320,14 +328,6 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   background-color: #ffffff;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .is-hidden {
