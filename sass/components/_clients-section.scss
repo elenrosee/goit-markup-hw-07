@@ -8,7 +8,7 @@
 .clients-list {
   display: flex;
 
-  & li:not(:last-child) {
+  li:not(:last-child) {
     margin-right: 30px;
   }
 }

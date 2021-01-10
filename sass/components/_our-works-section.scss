@@ -42,8 +42,8 @@
 
   @include transition(box-shadow);
 
-  &:hover .prject-pop-up-text,
-  &:focus .prject-pop-up-text {
+  .projects-item:hover .prject-pop-up-text,
+  .projects-item:focus .prject-pop-up-text {
     transform: translateY(0);
   }
 
@@ -72,6 +72,11 @@
   transform: translateY(100%);
 
   @include transition(transform);
+
+  .projects-item:hover,
+  .projects-item:focus {
+    transform: translateY(0);
+  }
 }
 .project-content {
   border-bottom: 1px solid $border-color-projects;
