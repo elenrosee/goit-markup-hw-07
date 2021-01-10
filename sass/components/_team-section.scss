@@ -52,8 +52,7 @@
   background-repeat: no-repeat;
   border-radius: 50%;
 
-  @include transition(color);
-  @include transition(background-color);
+  @include transition(all);
 
   &:hover {
     color: $text-color-white;

@@ -21,8 +21,7 @@
   border-radius: 4px;
   background-position: center;
 
-  @include transition(color);
-  @include transition(border-color);
+  @include transition(all);
 
   &:hover {
     color: $accent-color;

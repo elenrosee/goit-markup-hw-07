@@ -6,9 +6,9 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 
-  @include transition(opacity);
-  @include transition(transform);
+  @include transition(all);
 }
+
 .modal {
   padding: 40px;
   position: fixed;
@@ -139,8 +139,7 @@
     border-radius: 2px;
     border: 2px solid $text-color-black;
 
-    @include transition(background-color);
-    @include transition(border-color);
+    @include transition(all);
   }
 }
 

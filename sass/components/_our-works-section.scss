@@ -17,9 +17,7 @@
   cursor: pointer;
   margin: 0 4px;
 
-  @include transition(color);
-  @include transition(background-color);
-  @include transition(box-shadow);
+  @include transition(all);
 
   &.current,
   &:hover,
